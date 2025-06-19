@@ -1,4 +1,22 @@
-<!-- Add script to the <head> of your page to load the embeddable map component -->
-<script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
-<!-- Add custom element to <body> of your page -->
- <arcgis-embedded-map style="height:600px;width:700px;" item-id="730bd470cf2b45168f85fc186b8e1bc2" theme="light" portal-url="https://sdsugeo.maps.arcgis.com" ></arcgis-embedded-map>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Diego Library Map</title>
+
+  <!-- ArcGIS Embeddable Components -->
+  <script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
+</head>
+<body>
+  <h2>San Diego Public Libraries Map</h2>
+
+  <!-- Embeddable ArcGIS Map -->
+  <arcgis-embedded-map 
+    style="height:600px;width:100%;" 
+    item-id="730bd470cf2b45168f85fc186b8e1bc2" 
+    theme="light" 
+    portal-url="https://sdsugeo.maps.arcgis.com">
+  </arcgis-embedded-map>
+</body>
+</html>
